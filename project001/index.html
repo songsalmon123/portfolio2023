@@ -31,7 +31,7 @@
         <div class="boxC">hero-동영상</div>
         <div class="boxD">
             <p>아름다운 생물들과 <br> 함께하는 우리 가족 놀이터</p>
-            <h1>국내 최초이자 최대인 <em>담수어 아쿠아리움</em></h1>
+            <h1>국내 최초이자 최대인 <span>담수어 아쿠아리움</span></h1>
         </div>
         <div class="hero_icon">
             <ul>
@@ -40,6 +40,8 @@
                 <li><a href="#"><img src="img/hero_icon_03 (1).png" alt=""></a></li>
             </ul>
         </div>
+
+        <button id="top"><img src="img/top.png" alt=""></button>
        </header>
 
 
@@ -53,23 +55,23 @@
                     <ul>
                         <li><img src="img/storyImg1.png" alt="">
                             <em>01</em>
-                            <div>천연동굴을 변화시킨 수족관</div>
+                            <div class="img_txt1">천연동굴을 변화시킨 수족관</div>
                         </li>
                         <li><img src="img/storyImg2.png" alt="">
                             <em>02</em>
-                            <div>국내최초이자 최대인 담수어 아쿠아리움</div>
+                            <div class="img_txt2">국내최초이자 최대인<br>담수어 아쿠아리움</div>
                         </li>
                         <li><img src="img/storyImg3.png" alt="">
                             <em>03</em>
-                            <div>세계적인 멸종위기 동물 보존</div>
+                            <div class="img_txt3">세계적인 멸종위기 동물 보존</div>
                         </li>
                         <li><img src="img/storyImg4.png" alt="">
                             <em>04</em>
-                            <div>함께 이루어지는 생태계 교육</div>
+                            <div class="img_txt4">함께 이루어지는 생태계 교육</div>
                         </li>
                         <li><img src="img/storyImg5.png" alt="">
                             <em>05</em>
-                            <div>다양한 체험프로그램</div>
+                            <div class="img_txt5">다양한 체험프로그램</div>
                         </li>
                     </ul>
                 </div>
@@ -84,61 +86,100 @@
             <div class="box2-2">
                 <div class="imgBox">
                     <ul>
-                        <li><img src="img/useImg_1.png" alt="">
-                        <em>이용요금</em>
-                        <hr>
-                        일반 · 단체 · 우대사항
+                        <li><a href="#">
+                            <img src="img/useImg_1.png" alt="">
+                            <div>
+                                <em>이용요금</em>
+                                <span>일반 · 단체 · 우대사항</span>
+                            </div>
+                        </a>
                         </li>
-                        <li><img src="img/useImg_2.png" alt="">
-                            운영시간
-                            <hr>
-                            평일 · 주말 · 공휴일
+                        <li><a href="#">
+                            <img src="img/useImg_2.png" alt="">
+                                <div>
+                                    <em>운영시간</em>
+                                    <span>평일 · 주말 · 공휴일</span>
+                                </div>
+                        </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="box2-3">
-                <a href="#">이용권예매</a>
-            </div>
+            <button>이용권예매</button>
+
+            <!-- 이용요금과 운영시간 위아래에 선과 동그라미를 생기게 해야하는데
+                hr로 줘야할지 아니면 보더보틈으로 주어야 할지 모르겠습니다.
+                또한 어디에 속해있어야하는지 모르겠습니다. -->
         </article>
+
+
         <article class="box3">
             <div class="box3-1">
                 <h1 class="title">체험프로그램</h1>
             </div>
             <div class="box3-2">
-                <div class="box3-2-1">
+                <div class="box3-2A">
                     <em>01</em>
                     <h2>관람 안내</h2>
                 </div>
-                <div class="box3-2-2">
+                <div class="box3-2B">
                     <div class="trailer">
                         <ul>
-                            <li><a href=""><img src="img/01_img_1.png" alt=""></a></li>
-                            <li><a href=""><img src="img/01_img_2.png" alt=""></a></li>
-                            <li><a href=""><img src="img/01_img_3.png" alt=""></a></li>
+                            <li>
+                                <a href="#"><img src="img/01_img_1.png" alt="">
+                                <span>악어쇼</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/01_img_2.png" alt="">
+                                <span>인어쇼</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/01_img_3.png" alt="">
+                                <span>다이버의<br>수중탐사</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="box3-3">
-                <div class="box3-3-1">
+                <div class="box3-3A">
                     <em>02</em>
                     <h2>체험 안내</h2>
                 </div>
-                <div class="box3-3-2">
+                <div class="box3-3B">
                     <div class="trailer">
                         <ul>
-                            <li><a href=""><img src="img/02_img_1.png" alt=""></a></li>
-                            <li><a href=""><img src="img/02_img_2.png" alt=""></a></li>
-                            <li><a href=""><img src="img/02_img_3.png" alt=""></a></li>
-                            <li><a href=""><img src="img/02_img_4.png" alt=""></a></li>
-                            <li><a href=""><img src="img/02_img_5.png" alt=""></a></li>
-                            <li><a href=""><img src="img/02_img_6.png" alt=""></a></li>
+                            <li>
+                                <a href="#"><img src="img/02_img_1.png" alt="">
+                                <span>실외놀이터</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/02_img_2.png" alt="">
+                                <span>동물<br>먹이주기</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/02_img_3.png" alt="">
+                                <span>조류체험장</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/02_img_4.png" alt="">
+                                <span>비단잉어<br>먹이주기</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/02_img_5.png" alt="">
+                                <span>닥터피쉬<br>체험관</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/02_img_6.png" alt="">
+                                <span>터치풀</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </article>
+
+
         <article class="box4">
             <div class="box4-1 tour">
                 <h1 class="title">
@@ -168,21 +209,83 @@
             
         </article>
         <article class="box5">
-            <div class="box5-1">News</div>
+            <div class="box5-1">
+                <h1 class="title">NEWS</h1>
+            </div>
             <div class="box5-2">
-
+                <ul>
+                    <li><a href="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </a></li>
+                </ul>
             </div>
-            <div class="box5-3">공지사항내용</div>
+            <div class="box5-3">
+                <ul>
+                    <li><a href="">세젤귀 알파카를 만나볼 수 있는...</a></li>
+                    <li><a href="">아쿠아리움에 인어가 등장했다!!...</a></li>
+                    <li><a href="">대전아쿠아리움에 귀여운 삐삐가...</a></li>
+                    <li><a href="">대전아쿠아리움 운영시간 변경안...</a></li>
+                    <li><a href="">사막의 파수꾼 미어캣이 찾아왔...</a></li>
+                </ul>
+            </div>
         </article>
+<!-- 공지사항 사진을 글씨랑 같이 넣어야 하나요..? -->
+
+
         <article class="box6">
-            <div class="box6-1">찾아오시는길</div>
-            <div class="box6-2">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="box6-1">
+                <h1 class="title">찾아오시는 길</h1>
             </div>
-            <div class="box6-3">구글맵</div>
-           
+            <div class="box6-2">
+                <ul>
+                    <li><a href="">위치</a>
+                        <p><em>도로명</em>대전 중구 보문산공원로 469</p>
+                        <p><em>지번</em>대전 중구 대사동 198-14</p></li>
+                    <li><a href="">대중교통</a>
+                        <p><em>108 / 313 / 620</em><br>
+                        보문오거리 하차 후 보문산공원쪽으로 도보로 약 700m</p>
+                        <p><em>802</em><br>
+                        보문산공원 하차 후 보문산공원쪽으로 약 100m</p></li>
+                    <li><a href="">주차</a>
+                        <p>300여대를 수용할 수 있는 주차건물 및
+                            야외 주차장 · 공영주차장 마련
+                            <em>주차요금 무료</em>
+                        </p></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="box6-3">
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102840.06423997952!2d127.31870306154134!3d36.342559760326964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654ed7244b3f81%3A0x96beb8f73ba98323!2z64yA7KCE7JWE7L-g7JWE66as7JuA!5e0!3m2!1sko!2skr!4v1684396313618!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div><img src="img/dae_img.png" alt=""></div>
+                <div><img src="img/car_img.png" alt=""></div>
+            </div>
+            <div class="box6-4">구글맵</div>
         </article>
      
     
