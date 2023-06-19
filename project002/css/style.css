@@ -165,7 +165,6 @@ width: 100%;
 margin-bottom: 30px;
 text-align: left;
 color: #555;
-
 cursor: pointer;}
 
 .aBox1 li img {width: 100px;
@@ -303,20 +302,24 @@ section article:nth-child(5) .txt {margin-top: 100px;}
 
 
 
-.story {width: 70%;
+.story1 {width: 70%;
     height: 70vh;
     margin: 0 auto;
     margin-top: 50px;
 display: flex;
 position: relative;
 background-color: #F3FFA9;}
-/* story1 */
-.story .st1 {
+
+
+
+
+/* story1 대통령선거 */
+.story1 .st1_1 {
 width: 50%;
 height: 70vh;
 background-color: #B61B30;
 position: relative;}
-.story .st1>div {width: 100%;
+.story1 .st1_1>div {width: 100%;
 height: 70vh;
 position: absolute;
 bottom: 0;
@@ -326,17 +329,46 @@ background-repeat: no-repeat;
 background-position: bottom;
 background-color: #C2CC87;
 background-size :  100%;}
-.story .st1 span {width: 100%;
+.story1 .st1_1 span {width: 100%;
 display: block;
 position: absolute;
 overflow: hidden;
 bottom: 55px;
 z-index: 8;}
-.story .st1>div span img {
+.story1 .st1_1>div span img {
     width:670px;
     height: 390px;
 position: absolute;
 bottom: 0;
 right: 10px;}
 
-.st1 .hedden {}
+.st1_1 .hedden {}
+
+
+
+/* story2 체키승리 */
+section article:nth-child() {
+    background-image: url(../img/story_bImg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.story2 {
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 50px;
+position: relative;
+background-color: #bbb;
+}
+
+.story2 ul {
+    display: flex;
+}
+.story2 ul li {
+width: 50%;
+height: 70vh;
+background-color: #FFC700;
+}
