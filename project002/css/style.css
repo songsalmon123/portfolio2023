@@ -78,8 +78,9 @@ margin-top: 5px;}
 header .hero .iconSet li a {}
 header .hero .iconSet li a img {}
 
-/* gnb */
-header nav {width: 100%;}
+/* nav */
+header nav {width: 100%;
+z-index:11;}
 header nav ul {display: flex;
 position: relative;
 justify-content: center;
@@ -158,7 +159,7 @@ text-align: center;}
 /* 아티클1 첫번째div */
 .aBox1 {
 padding-top: 50px;
-z-index: 9999;}
+z-index: 10;}
 .aBox1 ul {font-family: 'Noto Sans KR', sans-serif;
     margin-bottom: 100px;
 }
@@ -254,7 +255,7 @@ background-position: center bottom;
 background-repeat: no-repeat;
 background-size: cover;
 overflow: hidden;}
-.chex {width: 60%;
+.chex {width: 70%;
     height: 70vh;
     margin: 0 auto;
     margin-top: 50px;
@@ -300,6 +301,45 @@ font-weight: 500;
 display: block;
 padding-top: 10px;
 }
+section article:nth-child(4) .txt {margin-top: 100px;}
+section article:nth-child(5) .txt {margin-top: 100px;}
 
 
 
+.story {width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 50px;
+display: flex;
+position: relative;
+background-color: #F3FFA9;}
+/* story1 */
+.story .st1 {
+width: 50%;
+height: 70vh;
+background-color: #B61B30;
+position: relative;}
+.story .st1>div {width: 100%;
+height: 70vh;
+position: absolute;
+bottom: 0;
+left: 0;
+background-image: url(../img/c_back.png);
+background-repeat: no-repeat;
+background-position: bottom;
+background-color: #C2CC87;
+background-size :  100%;}
+.story .st1 span {width: 100%;
+display: block;
+position: absolute;
+overflow: hidden;
+bottom: 55px;
+z-index: 8;}
+.story .st1>div span img {
+    width:670px;
+    height: 390px;
+position: absolute;
+bottom: 0;
+right: 10px;}
+
+.st1 .hedden {}
