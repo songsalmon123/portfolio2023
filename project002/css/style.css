@@ -319,7 +319,7 @@ background-size: 100%;
 
 
 
-/* story1 대통령선거 */
+/* story1 대통령선거//////////////// */
 .story1 .st1_1 {
 width: 50%;
 height: 60vh;
@@ -450,7 +450,7 @@ color: #B06340;}
 
 
 
-/* story2 체키승리 */
+/* story2 체키승리/////////// */
 section article:nth-child(4) {
     background-image: url(../img/story_bImg.png);
     background-position: center bottom;
@@ -476,9 +476,64 @@ background-color: #bbb;
     width: 50%;
     height: 50%;
 }
+/* story2 말풍선 */
+
+/* story2 동영상 */
+
+/* story2 체키사진 */
 
 
-/* story3 매지션체키 */
+/* story2 통계표 */
+.chart {
+  width: 550px;
+  height: 55px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  border-radius: 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.bar1 {
+    height: 100%;
+    background-color: #B61B30;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    box-shadow: 1px 0 150px #222 ;  }
+.bar2 {
+  height: 100%;
+  background-color: #B61B30;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bar3 {
+    height: 100%;
+    background-color: #B61B30;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    box-shadow: 1px 0 150px #222 ;
+
+  }
+.bar4 {
+    height: 100%;
+    background-color: #B61B30;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+/* story3 매지션체키///////////////// */
 .story3 {width: 70%;
     height: 70vh;
     margin: 0 auto;
@@ -494,3 +549,6 @@ width: 100%;}
 bottom: -80px;
 left: -100px;}
 .story3>p>img {width: 700px;}
+
+
+
