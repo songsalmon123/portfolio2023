@@ -29,7 +29,9 @@ background-image: url(../img/hero_img.png);
 background-position: center bottom;
 background-repeat: no-repeat;
 background-size: cover;
-overflow: hidden;}
+overflow: hidden;
+font-family: 'Noto Sans KR', sans-serif;}
+
 .hd_img {width: 100%;
     height: 140px;
     position: absolute;}
@@ -138,7 +140,7 @@ padding-top: 70px;
 
 /* about설정 */
 
-.about {width: 60%;
+.about {width: 63%;
     height: 90vh;
     margin: 0 auto;
     margin-top: 50px;
@@ -209,7 +211,7 @@ box-shadow: inset 3px 3px 8px #C2CC87;
 
 /* 아티클1 두번째div */
 .aBox2 {position: absolute;
-margin-left: 20%;
+margin-left: 22%;
 bottom: 170px;
 }
 .aBox2 img {width: 720px}
@@ -218,8 +220,8 @@ bottom: 170px;
 .aBox3 {position: absolute;
 right: 0;
 top: 60px;}
-.aBox3 img {width: 450px;}
-.aBox3 p {font-size: 16px;
+.aBox3 img {width: 480px;}
+.aBox3 p {font-size: 17px;
 position: absolute;
 top: 0;
 left: 20%;}
@@ -303,12 +305,16 @@ section article:nth-child(5) .txt {margin-top: 100px;}
 
 
 .story1 {width: 70%;
-    height: 70vh;
+    height: 60vh;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
 display: flex;
 position: relative;
-background-color: #F3FFA9;}
+background-image: url(../img/c_img.png);
+background-repeat: no-repeat;
+background-position: top;
+background-size: 100%;
+}
 
 
 
@@ -316,38 +322,136 @@ background-color: #F3FFA9;}
 /* story1 대통령선거 */
 .story1 .st1_1 {
 width: 50%;
-height: 70vh;
-background-color: #B61B30;
+height: 60vh;
 position: relative;}
 .story1 .st1_1>div {width: 100%;
-height: 70vh;
+height: 60vh;
 position: absolute;
-bottom: 0;
-left: 0;
 background-image: url(../img/c_back.png);
 background-repeat: no-repeat;
-background-position: bottom;
-background-color: #C2CC87;
-background-size :  100%;}
+background-position: bottom left;
+background-size : 100%;}
 .story1 .st1_1 span {width: 100%;
+    height: 100%;
 display: block;
 position: absolute;
-overflow: hidden;
 bottom: 55px;
-z-index: 8;}
-.story1 .st1_1>div span img {
-    width:670px;
-    height: 390px;
-position: absolute;
-bottom: 0;
-right: 10px;}
+z-index: 8;
+overflow: hidden;
+}
 
-.st1_1 .hedden {}
+
+.story1 .st1_1 span img {
+    width:560px;
+    height: 460px;
+position: absolute;
+bottom: -240px;
+left: 40px;
+transition: 1s;
+}
+.story1 .st1_1 span:hover img  {
+    bottom: 0;
+}
+
+
+.hidden1 {width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+opacity: 0;
+transition: 1s;
+}
+
+.st1_1:hover .hidden1 {opacity: 1;}
+
+
+.hidden1>img {position: absolute;
+left: 150px;
+top: -50px;}
+.hi1 {width: auto;
+    height: 200px;
+    position: absolute;
+    right: -460px;
+    top: 30px;}
+.hi1 img {}
+.hi1 p {text-align: left;
+font-size: 18px;
+font-weight: 500;
+color: #F3FFA9;}
+.hi1 p em {font-style: normal;
+font-size: 20px;
+font-weight: 800;
+color: #B06340;}
+
+/* /////////////// */
+.story1 .st1_2 {
+    width: 50%;
+    height: 60vh;
+    position: relative;}
+    .story1 .st1_2>div {width: 100%;
+    height: 60vh;
+    position: absolute;
+    background-image: url(../img/c_back.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size : 100%;}
+    .story1 .st1_2 span {width: 100%;
+        height: 100%;
+    display: block;
+    position: absolute;
+    bottom: 55px;
+    z-index: 8;
+    overflow: hidden;
+    }
+    
+    
+    .story1 .st1_2 span img {
+        width:550px;
+        height: 420px;
+    position: absolute;
+    bottom: -240px;
+    left: 40px;
+    transition: 1s;}
+    .story1 .st1_2 span:hover img  {
+        bottom: -20px;
+    }
+    
+    
+    .hidden2 {width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: 1s;}
+    
+    .st1_2:hover .hidden2 {opacity: 1;}
+    
+    .hidden2>img {position: absolute;
+        right:0;
+        top: -10px}
+    
+            /* 기호2번차카 txt */
+    .hi2 {
+    width: auto;
+    height: 200px;
+    position: absolute;
+    left: -500px;
+    top: 30px;
+    }
+    .hi2 img {padding-left: 60px;}
+    .hi2 p {text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F3FFA9;}
+    .hi2 p em {font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    color: #31A936;}
 
 
 
 /* story2 체키승리 */
-section article:nth-child() {
+section article:nth-child(4) {
     background-image: url(../img/story_bImg.png);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -360,15 +464,33 @@ section article:nth-child() {
     height: 70vh;
     margin: 0 auto;
     margin-top: 50px;
-position: relative;
 background-color: #bbb;
 }
 
 .story2 ul {
-    display: flex;
+    width: 100%;
+    height: 100%;
 }
 .story2 ul li {
-width: 50%;
-height: 70vh;
-background-color: #FFC700;
+    float: left;
+    width: 50%;
+    height: 50%;
 }
+
+
+/* story3 매지션체키 */
+.story3 {width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 50px;
+position: relative;
+background-color: #31A936;}
+
+.story3 video {position: absolute;
+height: 100%;
+width: 100%;}
+
+.story3>p {position: absolute;
+bottom: -80px;
+left: -100px;}
+.story3>p>img {width: 700px;}
