@@ -529,7 +529,7 @@ section article:nth-child(4) {
 }
 /* story2 말풍선 */
 .st2_1 {}
-.st2_1>img {width: 500px;
+.st2_1>img {width: 460px;
 position: absolute;
 right: 40px;
 top: 20px;}
@@ -538,7 +538,8 @@ color: #DD5656;
 position: absolute;
 right: 0;
 text-align: right;
-margin-right: 60px;}
+margin-right: 60px;
+top: -5px;}
 .st2_1 p em {font-size: 36px;
 font-style: normal;
 font-weight: 600;
@@ -552,13 +553,17 @@ right: 0;}
 /* story2 체키사진 */
 .st2_3 {background-color: #C2CC87;}
 .st2_3 p {position: absolute;
-top: -250px;
-left: -130px;
+top: -220px;
+left: -150px;
 }
-.st2_3 p img {width: 900px;}
+.st2_3 p img {width: 850px;}
 
 /* story2 통계표 */
 .st2_4 {}
+.chaSet {
+position: absolute;
+bottom: -20px;
+right: 0;}
 .chart {
   width: 550px;
   height: 55px;
