@@ -164,7 +164,7 @@ z-index: 10;}
     margin-bottom: 100px;}
 .aBox1 li {display: flex;
 width: 100%;
-margin-bottom: 30px;
+margin-bottom: 20px;
 text-align: left;
 color: #555;
 cursor: pointer;}
@@ -221,10 +221,10 @@ bottom: 170px;
 right: 0;
 top: 60px;}
 .aBox3 img {width: 480px;}
-.aBox3 p {font-size: 17px;
+.aBox3 p {font-size: 18px;
 position: absolute;
 top: 0;
-left: 20%;}
+left: 19%;}
 .aBox3 p b {}
 
 /* 아티클1 네번째div */
@@ -235,16 +235,32 @@ top: 340px;
 .aBox4 img {width: 400px;
     height: 100%;}
 
-.aBox4 ul {position: absolute;
+.aBox4 .a1 {position: absolute;
 display: flex;
 right: 0;
-margin-top: 35px;}
-.aBox4 ul li {
+margin-top: 10px;}
+.aBox4 .a1>li {
     margin-right: -35px;
 }
-.aBox4 ul li img {width:210px;
+.aBox4 .a1>li>img {width:210px;
     height: 100%;
 }
+
+.aBox4 .a2 {position: absolute;
+    display: flex;
+    right: 0;
+    margin-top: 10px;}
+    .aBox4 .a2 li {
+        margin-right: -35px;}
+    .aBox4 .a2 li img {width:210px;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.8s;
+        cursor: pointer;
+    }
+    .aBox4 .a2 li img:hover {opacity: 1;}
+
+
 
 /* 아티클2 chex설정/////////// */
 section article:nth-child(2) {
@@ -264,13 +280,44 @@ align-items: center;
 text-align: center;}
 .chex ul {width: 100%;
     display: flex;
-justify-content: space-between;}
-.chex li {height: 100%;}
-.chex li img {width: 170px;
-height: 226px;}
+justify-content: space-between;
+background-color: #31A936;}
+.chex li {height: 60vh;
+    width: 25%;
+    background-color: #7D3616;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center center;
+    justify-content: center;
+}
+.chex li img {
+    /* width: 170px;
+height: 226px; */
+width: 270px;
+height: 354px;
+position: absolute;
+z-index: 7;
+}
+.chex li span {
+    width: 320px;
+height: 320px;
+display: block;
+background-color: #FFC700;
+border-radius: 50%;
+position: absolute;
+top: 5%;
+left: 0;
+}
+
+.chex li:nth-child(1):hover img {}
+
 
 .chex li p {margin-top: 20px;
-overflow: hidden;}
+overflow: hidden;
+position: absolute;
+bottom: 15%;
+}
 .chex li p b {font-size: 28px;}
 .chex li p em {}
 .chex li p em a {display: block;
@@ -281,6 +328,7 @@ overflow: hidden;}
     font-size: 15px;
     color: #fff;
     padding-top: 5px;
+    
 }
 
 /* 아티클3 story설정/////////// */
@@ -460,11 +508,13 @@ section article:nth-child(4) {
 }
 
 .story2 {
-    width: 70%;
+    width: 60%;
     height: 70vh;
     margin: 0 auto;
-    margin-top: 50px;
-background-color: #bbb;
+    margin-top: 80px;
+    background-color: #31A936;
+    position: relative;
+
 }
 
 .story2 ul {
@@ -475,25 +525,57 @@ background-color: #bbb;
     float: left;
     width: 50%;
     height: 50%;
+    position: relative;
 }
 /* story2 말풍선 */
+.st2_1 {}
+.st2_1>img {width: 500px;
+position: absolute;
+right: 40px;
+top: 20px;}
+.st2_1 p {font-size: 18px;
+color: #DD5656;
+position: absolute;
+right: 0;
+text-align: right;
+margin-right: 60px;}
+.st2_1 p em {font-size: 36px;
+font-style: normal;
+font-weight: 600;
+color: #B61B30;}
 
 /* story2 동영상 */
-
+.st2_2 {}
+.st2_2 video { width: 95%;
+    position: absolute;
+right: 0;}
 /* story2 체키사진 */
-
+.st2_3 {background-color: #C2CC87;}
+.st2_3 p {position: absolute;
+top: -250px;
+left: -130px;
+}
+.st2_3 p img {width: 900px;}
 
 /* story2 통계표 */
+.st2_4 {}
 .chart {
   width: 550px;
   height: 55px;
-  background-color: #f0f0f0;
+  background-color: #F3FFA9;
   border-radius: 5px;
   overflow: hidden;
   border-radius: 50px;
   position: relative;
   margin-bottom: 20px;
 }
+.chart>p {position: absolute;
+right: 0;
+margin: 10px 20px;
+font-size: 20px;
+font-weight: bold;
+color: #B61B30;}
+
 
 
 .bar1 {
@@ -505,6 +587,12 @@ background-color: #bbb;
     left: 0;
     z-index: 6;
     box-shadow: 1px 0 150px #222 ;  }
+    .bar1 p {font-size: 20px;
+    font-weight: 500;
+padding: 10px 25px;
+color: #F3FFA9;}
+
+
 .bar2 {
   height: 100%;
   background-color: #B61B30;
@@ -524,6 +612,14 @@ background-color: #bbb;
     box-shadow: 1px 0 150px #222 ;
 
   }
+
+  .bar3 p {font-size: 20px;
+    font-weight: 500;
+padding: 10px 25px;
+color: #F3FFA9;}
+
+
+
 .bar4 {
     height: 100%;
     background-color: #B61B30;
