@@ -171,14 +171,14 @@ cursor: pointer;}
 
 .aBox1 li img {width: 100px;
 height: 100px;}
-.aBox1 li p {font-size: 18px;
+.aBox1 li p {font-size: 15px;
 margin-top: 15px;
 margin-left: 20px;
 }
 
 .aBox1 li:nth-child(2) p {margin-top: 5px;}
 
-.aBox1 li b {font-size: 28px;
+.aBox1 li b {font-size: 26px;
 transition: 0.5s;}
 .aBox1 li:hover b {color: #B61B30;}
 .aBox1 li em {font-style: normal;
@@ -212,7 +212,7 @@ box-shadow: inset 3px 3px 8px #C2CC87;
 /* 아티클1 두번째div */
 .aBox2 {position: absolute;
 margin-left: 22%;
-bottom: 170px;
+bottom: 190px;
 }
 .aBox2 img {width: 720px}
 
@@ -230,9 +230,9 @@ left: 19%;}
 /* 아티클1 네번째div */
 .aBox4 {position: absolute;
 right: 0px;
-top: 340px;
+top: 310px;
 }
-.aBox4 img {width: 400px;
+.aBox4 img {width: 350px;
     height: 100%;}
 
 .aBox4 .a1 {position: absolute;
@@ -512,7 +512,6 @@ section article:nth-child(4) {
     height: 70vh;
     margin: 0 auto;
     margin-top: 80px;
-    background-color: #31A936;
     position: relative;
 
 }
@@ -551,18 +550,18 @@ color: #B61B30;}
     position: absolute;
 right: 0;}
 /* story2 체키사진 */
-.st2_3 {background-color: #C2CC87;}
+.st2_3 {}
 .st2_3 p {position: absolute;
 top: -220px;
 left: -150px;
 }
-.st2_3 p img {width: 850px;}
+.st2_3 p img {width: 800px;}
 
 /* story2 통계표 */
 .st2_4 {}
 .chaSet {
 position: absolute;
-bottom: -20px;
+bottom: 0;
 right: 0;}
 .chart {
   width: 550px;
@@ -639,17 +638,56 @@ color: #F3FFA9;}
     height: 70vh;
     margin: 0 auto;
     margin-top: 50px;
-position: relative;
-background-color: #31A936;}
+position: relative;}
 
 .story3 video {position: absolute;
 height: 100%;
-width: 100%;}
+width: 100%;
+z-index: 4;}
 
-.story3>p {position: absolute;
-bottom: -80px;
-left: -100px;}
-.story3>p>img {width: 700px;}
+.story3 .st3Img1 {position: absolute;
+bottom: -100px;
+left: -100px;
+z-index: 5;}
+.story3 .st3Img1>img {width: 670px;}
 
+.story3 .st3Img2 {position: absolute;
+bottom: -100px;
+right:-360px;}
+.story3 .st3Img2>img {width: 1100px;}
+
+.story3>div {width: 300px;
+display: flex;
+z-index: 6;
+position: relative;
+margin-left: 77%;
+top: -50px;}
+.story3>div>a {}
+.story3>div>a>p {width: 260px;
+    height: 30px;
+    background-color: #F3FFA9;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50px;
+    color: #B61B30;
+    font-weight: 500;
+    top: 35px;
+    left: -20px;
+    box-shadow: 0px 2px 6px -3px #000;
+    transition: all 0.2s;
+}
+.story3>div>a:hover p {background-color: #B61B30;
+color: #C2CC87;}
+
+.story3>div>a>img {width: 120px;
+position: absolute;
+right: 0;
+top: -5px;
+transition: all 0.4s;}
+.story3>div>a:hover:hover img {
+    width: 130px;
+    transform:rotate(20deg);}
+    
 
 
