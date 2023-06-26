@@ -102,8 +102,13 @@ height: 100%;
 position: relative;
 bottom: 150px;
 left: 200px;}
-.hero_img .i2 {}
-.hero_img .i3 {}
+.hero_img .i2 {position: absolute;
+top: 50%;
+right: 28%;}
+.hero_img .i3 {position: absolute;
+top: 35%;
+right: 35%;
+width: 780px;}
 
 
 
@@ -279,44 +284,62 @@ font-size: 15px;
 align-items: center;
 text-align: center;}
 .chex ul {width: 100%;
+    height: 60vh;
     display: flex;
-justify-content: space-between;
-background-color: #31A936;}
-.chex li {height: 60vh;
-    width: 25%;
-    background-color: #7D3616;
-    padding: 0 20px;
+justify-content: space-between;}
+.chex li {height: 25vh;
+    width: 20%;
+    margin: 0 20px;
+    top: 30px;
     position: relative;
     display: flex;
     align-items: center center;
     justify-content: center;
-}
+transition: all 0.7s;}
 .chex li img {
-    /* width: 170px;
-height: 226px; */
-width: 270px;
-height: 354px;
+    width: 170px;
+height: 226px;
 position: absolute;
+top: 50px;
+transition: all 0.5s;
 z-index: 7;
 }
-.chex li span {
-    width: 320px;
-height: 320px;
+.chex li span {width: 10px;
+    height: 10px;
 display: block;
-background-color: #FFC700;
 border-radius: 50%;
 position: absolute;
-top: 5%;
-left: 0;
+transition: all 0.7s;
+top: 30%;
+left: 47%}
+
+.chex li:hover img {width: 270px;
+    height: 354px;
+    position: absolute;
+top: 0;}
+.chex li:hover span {width: 320px;
+height: 320px;
+top: 10px;
+left: 35px;
+background-color: #FFC700;
 }
+.chex li:hover {height: 55vh;
+width: 30%;}
+.chex li:hover div {
+    opacity: 1;}
 
-.chex li:nth-child(1):hover img {}
-
+    
+.chex li>div {position: absolute;
+    margin-top: 500px;
+margin-right: 300px;
+opacity: 0;
+transition: all 0.5s;}
 
 .chex li p {margin-top: 20px;
 overflow: hidden;
 position: absolute;
 bottom: 15%;
+width: 300px;
 }
 .chex li p b {font-size: 28px;}
 .chex li p em {}
@@ -328,7 +351,7 @@ bottom: 15%;
     font-size: 15px;
     color: #fff;
     padding-top: 5px;
-    
+    margin-left: 15px;
 }
 
 /* 아티클3 story설정/////////// */
@@ -690,4 +713,56 @@ transition: all 0.4s;}
     transform:rotate(20deg);}
     
 
+/* 아티클6 history설정/////////// */
 
+.eBox {width: 60%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 60px;
+position: relative;}
+
+
+.e1 {display: flex;
+justify-content: space-between;
+position: absolute;
+bottom: 20px;
+width: 100%;}
+.e1>li {cursor: pointer;}
+.e1 img {width: 340px;
+height: 670px;}
+
+/* //////////////////// */
+
+
+.e2>li:hover {opacity: 1;}
+.e2>li {opacity: 0;
+transition: all 0.5s;}
+
+
+
+
+/* e2 설정 */
+
+.e2 {display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;}
+    .e2>li {cursor: pointer;}
+    .e2 img {width: 340px;
+        height: 670px;}
+
+.e2>li>ul {position: absolute;
+    top: 120px;
+font-size: 13px;
+width: 30%;
+height: 70%;
+}
+
+
+.e2>li>ul>li {color: #B61B30;
+margin-bottom: 10px;
+margin-left: 60px;
+}
+.e2>li>.etxt1>li:nth-child(1) {margin-top: 60px;}
+.e2>li>.etxt3>li:nth-child(1) {margin-top: 120px;}
