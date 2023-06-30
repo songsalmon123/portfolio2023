@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+/* 전체설정 */
+* {margin: 0;
+padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+color: #000;}
+img {vertical-align: bottom;}
+body {background-image: url(../img/backImg.png);}
+
+
+/* 메뉴판설정 */
+h1 {width: 100px;
+    height: 80px;
+    background-color: forestgreen;
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
