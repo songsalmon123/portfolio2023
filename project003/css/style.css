@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
 
 /* 전체설정 */
 * {margin: 0;
@@ -96,8 +97,7 @@ section {width: 100%;
 }
 /* 섹션의 메인설정 */
 .main {display: block;
-position: relative;
-}
+position: relative;}
 /* 메인 로고 설정 */
 .main h2 {width: 1050px;
 height: 140px;
@@ -147,7 +147,7 @@ background-size: cover;
 background-position:  center ;
 }
 .Profile h2 {font-family: 'Playfair Display', serif;
-    font-size: 350px;
+    font-size: 320px;
     position: fixed;
     bottom: -60px
 }
@@ -164,17 +164,131 @@ bottom: -30px;}
 /* 정면 미노이 뒤 타원형 글씨 box2 */
 .box2 {position: fixed;
 z-index: 1;
-margin-left: 25%;
-top: 5%;}
+bottom: 47%;
+right: 17%;}
+.box2 img {width: 830px;}
+
+/* 미노이 옆 8볼타운 택 설정 */
+.box3 {position: fixed;
+bottom: 40%;
+left: 23%;}
+.box3 img {}
+
+
 
 
 /* 프로필텍스트 설정 */
-.Profile ul {z-index: 2;
+.pTxt {z-index: 2;
 text-align: right;
 position: fixed;
-margin-left: 43%;
-margin-top: 8%;}
-.Profile ul li {}
-.Profile ul li:nth-child(4) {margin-bottom: -50px;}
-.Profile ul li:nth-child(5) {}
-.Profile ul li:nth-child(6) {margin-bottom: ;}
+bottom: 30%;
+right: 17%;}
+.pTxt li {}
+.pTxt li:nth-child(2) {margin-top: 5px;}
+.pTxt li:nth-child(4) {margin-bottom: -20px;}
+.pTxt li:nth-child(5) {margin-bottom: -10px;}
+
+/* sns세트 설정 */
+.snsSet {width: 350px;
+height: 30px;
+position: fixed;
+top: 20px;
+display: flex;
+z-index: 9999;
+justify-content: center;
+border-top: 2px solid #333;
+transition: 0.5s;
+cursor: pointer;
+
+}
+
+.snsSet:hover {background-color: #ddd;
+border-radius: 7px;
+border-top: 2px solid #ddd;}
+
+
+.snsSet li {width: 30px;
+    height: 30px;
+    margin: 5px;
+    margin-top: 10px;
+position: relative;
+opacity: 0;
+transition: all 0.6s;}
+.snsSet:hover li {opacity: 1;}
+
+.snsSet li a {width: 100%;
+    height: 100%;
+position: absolute;
+}
+.snsSet li a img {width: 23px;
+height: 23px;
+position: absolute;
+bottom: 0;
+transition: all 0.2s;}
+
+.snsSet li:nth-child(6) img {width: 30px;
+height: 21px;
+margin-bottom: 1px;}
+
+.snsSet li a:hover img {width: 30px;
+height: 30px;}
+.snsSet li:nth-child(6) a:hover img {width: 40px;
+    height: 29px;}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+.Song {backdrop-filter: blur(5px);
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;}
+.Song .Sm {position: fixed;
+bottom: 35%;
+left: 15%;}
+
+/* S1 위에 노래 설정 */
+.S1 {}
+.S1 ul {}
+.S1 ul li {position: fixed;
+display: flex;
+bottom: 44%;
+left: 19%;}
+.S1 ul li img {}
+.S1 ul li p {margin-left: 10%;
+    font-size: 17px;
+    font-weight: 300;
+display: block;
+width: 500px;
+margin-top: 8%;
+line-height: 30px;}
+.S1 ul li p>em {font-style: normal;
+font-size: 14px;}
+.S1 ul li p>b {font-size: 22px;}
+
+
+/* S2 아래 앨범 설정 */
+.S2 {position: fixed;
+bottom: 4%;
+z-index: 4;}
+.S2 ul {display: flex;
+    text-align:center;
+    justify-content: center;
+height: 80px;}
+.S2 ul li {width: 80px;
+display:inline-block;}
+.S2 ul li img {width: 60px;
+transition: all 0.3s;
+cursor: pointer;}
+.S2 ul li img:hover {width: 70px;}
+
+/* S3 아래 파일 설정 */
+.S3 {position: fixed;
+bottom: 4%;}
+.S3 p {width: 1300px;
+background-color: #000;
+height: 55px;
+border-radius: 10px;
+opacity: 0.3;}
+.S3 img {position: fixed;
+bottom: 3%;
+left: 15.5%;}
