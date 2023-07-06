@@ -18,6 +18,40 @@ background-size: cover;
 background-position: center center;}
 
 
+/* 팝업설정구간 */
+
+.popUp {position: fixed;
+width: 520px;
+height: 292px;
+background-color: #fff;
+left: 15%;
+top: 5%;
+z-index: 999;
+border: 1px solid #000;
+filter: drop-shadow(3px 4px 3px rgba(0,0,0,0.2));}
+
+.popUp p {
+    text-align: center;
+}
+.popUp p img {width: 520px;}
+.popUp span {font-family: 'Noto Sans', sans-serif;
+position: absolute;
+width: 40px;
+height: 40px;
+display: flex;
+background-color: #fff;
+top: -1px;
+right: -42px;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border: 1px solid #000;
+}
+
+
+
+
+
 .navmain {}
 /* 메뉴판설정 */
 h1 {width: 120px;
@@ -28,11 +62,22 @@ h1 {width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 6;}
+    z-index: 6;
+    animation: ani 0.9s infinite alternate;}
+
+    @keyframes ani {
+
+    0% {transform: scale(1);
+    opacity: 0.8;}
+    100% {transform: scale(1.05);}
+}
+
+
 h1 img {width: 120px;
 height: 120px;
 transition: all 0.8s;}
 .navmain:hover h1 img {filter: drop-shadow(-3px 3px 4px #777); }
+
 
 /* 메뉴설정 */
 nav {width: 120px;
@@ -124,7 +169,8 @@ margin-top: 280px;}
 .main ul li a {position: relative;}
 .main ul li a img {position: absolute;
     left: 0;
-    top: 0;}
+    top: 0;
+    transition: all 0.4s;}
     .navimg {z-index: 2;}
 /* 사진 뒷배경 설정 */
 .back {position: absolute;
@@ -133,7 +179,9 @@ margin-top: 280px;}
     z-index: 1;
     opacity: 0;
 transition: all 0.3s;}
-.main ul li a:hover .back {opacity: 1;}
+.main ul li a:hover .back {opacity: 1;
+}
+    .main ul li a:hover img {transform:rotate(-3deg);}
 
 
 
@@ -149,8 +197,37 @@ background-position:  center ;
 .Profile h2 {font-family: 'Playfair Display', serif;
     font-size: 320px;
     position: fixed;
-    bottom: -60px
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../img/backImg.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* 글씨를 투명하게 적용하여 배경을 넣는다. */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation-duration:2s;
+      /* 애니메이션 이름 */
+    animation-name: pro;
+    animation-duration:3.5s;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
+
+@keyframes pro {
+    0% {
+        bottom:1200px;
+      }
+      100% {
+        bottom:-50px;
+      }
+    }
+
+
 /* 정면 미노이 box1 */
 .box1 {width: 600px;
 height: 1000px;
@@ -170,12 +247,18 @@ right: 17%;}
 
 /* 미노이 옆 8볼타운 택 설정 */
 .box3 {position: fixed;
-bottom: 40%;
-left: 23%;}
+bottom: 39%;
+left: 22%;
+animation: ball 0.5s Infinite Alternate;
+transform-origin: right bottom;}
 .box3 img {}
 
-
-
+@keyframes ball {
+    0% {transform: rotate(15deg);
+    }
+    100% {transform: rotate(-10deg);
+    } 
+  }
 
 /* 프로필텍스트 설정 */
 .pTxt {z-index: 2;
@@ -292,3 +375,44 @@ opacity: 0.3;}
 .S3 img {position: fixed;
 bottom: 3%;
 left: 15.5%;}
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 유튜브설정 */
+.Youtube {backdrop-filter: blur(5px);}
+.Youtube h2 {position: fixed;
+margin-left:700px;
+margin-bottom: 500px;}
+.Youtube h2 img {filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));}
+
+
+/* 유튜브 가는 버튼 두개 */
+.yt {position: fixed;
+margin-bottom: 330px;
+margin-right: 150px;}
+.yt ul {}
+.yt ul li {font-size: 17px;
+font-weight: 300;
+text-align: center;}
+.yt ul li a {display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 220px;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 5px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    transition: all 0.2s;
+}
+.yt ul li a:hover {background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 3px 3px 5px #444 ;
+} 
+
+/* 비디오 */
+.vid {}
+.vid ul {display: flex;}
+.vid ul li {}
+.vid ul li video {width: 910px;
+height: 500px;} 
+.vid ul li video source {}
