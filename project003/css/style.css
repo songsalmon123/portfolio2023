@@ -410,9 +410,109 @@ text-align: center;}
 } 
 
 /* 비디오 */
-.vid {}
+/* .vid {}
 .vid ul {display: flex;}
 .vid ul li {}
 .vid ul li video {width: 910px;
 height: 500px;} 
-.vid ul li video source {}
+.vid ul li video source {} */
+
+.video-container {
+    position: fixed;
+    bottom: 5%;
+    left: 13%;
+    width: 900px; /* 스크린 크기에 맞게 조정 */
+    height: 500px; /* 스크린 크기에 맞게 조정 */
+    overflow: hidden;
+  }
+  
+  .video-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .video-slide {
+    flex: 1 0 100%;
+  }
+  
+  .video-slide video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.Photo {backdrop-filter: blur(5px);}
+
+/* 화보, 일상 가는 버튼 두개 */
+.Pt {position: fixed;
+    margin-top: 700px;
+    margin-right: 1230px;}
+    .Pt ul {}
+    .Pt ul li {font-size: 16px;
+    font-weight: 300;
+    text-align: center;}
+    .Pt ul li a {display: block;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 170px;
+        height: 30px;
+        margin-top: 20px;
+        padding-top: 7px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        font-family: 'Noto Sans', sans-serif;
+        color: #fff;
+        transition: all 0.2s;
+    }
+    .Pt ul li a:hover {background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 3px 3px 5px #444 ;
+    } 
+
+    /* 클릭할수있는 9개의 정사각형사진들 */
+.Pt1_1 {position: fixed;
+margin-right: 600px;}
+
+.Pt1_1 ul {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);}
+.Pt1_1 ul li {  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;}
+    
+.Pt1_1 ul li img {width: 115px;
+height: 115px;}
+
+
+/* 정사각형 사진들 클릭하면 나오는 사진 */
+.Pt1_2 {}
+.Pt1_2 ul {}
+.Pt1_2 ul li {}
+.Pt1_2 ul li img {}
