@@ -378,7 +378,8 @@ left: 15.5%;}
 
 /* ///////////////////////////////////////////////////////////////// */
 /* 유튜브설정 */
-.Youtube {backdrop-filter: blur(5px);}
+.Youtube {
+    backdrop-filter: blur(5px);}
 .Youtube h2 {position: fixed;
 margin-left:700px;
 margin-bottom: 500px;}
@@ -410,60 +411,22 @@ text-align: center;}
 } 
 
 /* 비디오 */
-/* .vid {}
-.vid ul {display: flex;}
-.vid ul li {}
+.vid {position: fixed;
+}
+.vid ul {display: flex;
+width: 100%;
+height: 500px;
+background-color: #49D3FF;
+position: fixed;
+left: 0;
+bottom: 60px;
+overflow: hidden;}
+.vid ul li {margin-right: 200px;}
+.vid ul li:nth-child(1){margin-left: 250px;}
 .vid ul li video {width: 910px;
 height: 500px;} 
-.vid ul li video source {} */
+.vid ul li video source {}
 
-.video-container {
-    position: fixed;
-    bottom: 5%;
-    left: 13%;
-    width: 900px; /* 스크린 크기에 맞게 조정 */
-    height: 500px; /* 스크린 크기에 맞게 조정 */
-    overflow: hidden;
-  }
-  
-  .video-slider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  
-  .video-slide {
-    flex: 1 0 100%;
-  }
-  
-  .video-slide video {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    line-height: 30px;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
 
 
 /* /////////////////////////////////////////////////////////////////////////////// */
@@ -532,3 +495,26 @@ margin-bottom: 50px;}
     display: flex;
 }
 .Pt1_2 ul li>img {}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.P2_star {}
+
+.P2_o {width: 570px;
+height: 570px;
+background-color: #49D3FF;
+border-radius: 10000px;
+filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));
+position: fixed;}
+
+
+/* 넘어가는 사진 */
+.Pt2 {width: 5000px;
+height: 650px;
+z-index: 3;
+position: fixed;
+}
+.Pt2 ul {display: flex;}
+.Pt2 ul li {margin-right: 100px;}
+.Pt2 ul li:nth-child(1) {margin-left: 2220px;}
+.Pt2 ul li>img{width: 480px;}
+
