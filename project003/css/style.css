@@ -419,8 +419,7 @@ height: 500px;
 background-color: #49D3FF;
 position: fixed;
 left: 0;
-bottom: 60px;
-overflow: hidden;}
+bottom: 60px;}
 .vid ul li {margin-right: 200px;}
 .vid ul li:nth-child(1){margin-left: 250px;}
 .vid ul li video {width: 910px;
