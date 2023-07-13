@@ -209,7 +209,7 @@ font-size: 20px;}
 .aBox1 .aBox1_1 p {font-family: 'Kavoon';
     font-size: 20px;
 }
-.aBox1 .aBox1_1 a {padding-top: 9px;
+.aBox1 .aBox1_1 a {
 text-align: center;
 display: block;
 background-color: #FFC700;
@@ -219,7 +219,7 @@ border-radius: 50px;
 transition: all 0.5s;
 color: #fff;
 padding-top: 18px;
-box-shadow: #d3a500 0 6px; }
+box-shadow: #d3a500 0 6px;}
 
     .aBox1 .aBox1_1 a:hover {color: #B61B30;
     background-color: #FFC700;
@@ -785,3 +785,44 @@ margin-left: 60px;
 }
 .e2>li>.etxt1>li:nth-child(1) {margin-top: 60px;}
 .e2>li>.etxt3>li:nth-child(1) {margin-top: 120px;}
+
+
+/* //////////////////////////////////////// */
+/* 푸터 설정 */
+footer {width: 100%;
+height: 180px;
+background-color: #662B11;
+position: relative;}
+
+.f1 {width: 600px;
+height: 50px;
+position: absolute;
+left: 20%;
+top: 20px;
+}
+.f1 ul {display: flex;
+font-size: 16px;
+color: #999;}
+.f1 li {margin-right: 20px;}
+.f1 li a {color: #ddd;
+opacity: 0.6;}
+.f1 li:nth-child(5) a {color: #fff;
+opacity: 0.8;}
+.f1 li a:hover {opacity: 1;}
+
+.f1 img {width: 100px;
+margin-top: 13px;
+cursor: pointer;
+transition: all 0.4s;}
+.f1 img:hover {opacity: 0.5;}
+
+
+.f2 {width: 600px;
+    height: 50px;
+    position: absolute;
+    right: 20%;
+    top: 20px;
+}
+.f2 p {}
+.f2 p>b {}
+.f2 p>em {}

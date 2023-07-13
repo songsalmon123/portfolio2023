@@ -1,1 +1,5 @@
-$()
+$(document).raedy(function(){
+
+
+    
+})
