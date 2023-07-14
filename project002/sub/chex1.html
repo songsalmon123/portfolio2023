@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오곡으로 만든 첵스초코</title>
+
+    <!--외부스타일시트연결 -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 제이쿼리 외부스크립트연결 -->
+    <script src="../js/javascript.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var slideshow = document.getElementById("slideshow");
+  var images = slideshow.getElementsByTagName("img");
+  var previousButton = slideshow.querySelector(".previous");
+  var nextButton = slideshow.querySelector(".next");
+  var currentImage = 0;
+
+  function showImage(index) {
+    for (var i = 0; i < images.length; i++) {
+      images[i].classList.remove("active");
+    }
+
+    images[index].classList.add("active");
+  }
+
+  previousButton.addEventListener("click", function() {
+    currentImage = (currentImage - 1 + images.length) % images.length;
+    showImage(currentImage);
+  });
+
+  nextButton.addEventListener("click", function() {
+    currentImage = (currentImage + 1) % images.length;
+    showImage(currentImage);
+  });
+});
+    </script>
+</head>
+
+<body>
+    <img src="../img/hero_1deth.png" alt="" class="hd_img">
+    <h1><img src="../img/logo.png" alt=""></h1>
+<header>
+<div class="hero">    
+        <div class="inner">
+            <!-- sns -->
+                        <ul class="snsSet">
+            <li><a href="https://www.youtube.com/@kelloggkorea4273/featured"><img src="../img/sns_1.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/kelloggs_korea/"><img src="../img/sns_2.png" alt=""></a></li>
+            <li><a href="https://blog.naver.com/kelloggs_kr"><img src="../img/sns_3.png" alt=""></a></li>
+                        </ul>
+            <!-- icon -->
+                        <ul class="iconSet">
+            <li><a href="#"><img src="../img/icon_1.png" alt=""></a></li>
+            <li><a href="#"><img src="../img/icon_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../img/icon_3.png" alt=""></a></li>
+                        </ul>
+        </div>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Chex Choco</li>
+            <li>Chex Story</li>
+            <li>Chex History</li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="help">
+    <div class="hp1">
+        <p>?</p>
+        <div class="hp2">
+            <p>자주 하는 질문</p>
+        </div>
+    </div>
+</div>
+
+    <div class="shop">
+        <div class="sp1">
+            <div id="slideshow">
+                <img class="active" src="../img/B_1.png" alt="이미지 1">
+                <img src="../img/chex1_1.png" alt="이미지 2">
+                <button class="previous"><</button>
+                <button class="next">></button>
+              </div>
+        </div>
+        <div class="sp2">
+            <div class="sp2_1">
+                <p class="sp2_txt">첵스초코 문앤스타<em>(420g)</em></p>
+                <ul class="sp2_1icon">
+                    <li><img src="../img/pngwing 12.png" alt=""></li>
+                    <li><img src="../img/pngwing 13.png" alt=""></li>
+                </ul>
+                <div><img src="../img/Line 2.png" alt=""></div>
+                <p></p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</header>
+
+<section>
+    <article>
+        
+    </article>
+</section>
+
+
+<footer>
+    <div class="f1">
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li>|</li>
+            <li><a href="#">이용약관</a></li>
+            <li>|</li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li>|</li>
+            <li><a href="#">이용안내</a></li>
+            <li>|</li>
+            <li><a href="#">고객만족센터</a></li>
+        </ul>
+        <img src="../img/footer_logo.png" alt="">
+    </div>
+    <div class="f2">
+        <p>
+            <b>고객센터</b><br>
+            123-456-7890<br>
+            <em>월 ~ 금 09:00~17:00 (점심시간 12:30~13:30) (토/일/공휴일 휴무)</em>
+        </p>
+        <div></div>
+    </div>
+    <div class="f3">
+        <p>안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지)<br>
+        서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)</p>
+    </div>
+    <div class="f4">
+        <ul>
+            <li><a href="https://www.youtube.com/@kelloggkorea4273/featured"><img src="../img/sns_1.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/kelloggs_korea/"><img src="../img/sns_2.png" alt=""></a></li>
+            <li><a href="https://blog.naver.com/kelloggs_kr"><img src="../img/sns_3.png" alt=""></a></li>
+        </ul>
+        <div class="copyright">
+            <p>Copyright &copy; Songdaeun kellogg_chex</p>
+        </div>
+    </div>
+    <div class="fbImg">
+        <img src="../img/footer_Blogo.png" alt="">
+    </div>
+</footer>
+
+
+
+</body>
+</html>

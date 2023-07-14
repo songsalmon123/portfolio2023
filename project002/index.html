@@ -9,6 +9,7 @@
     <!--외부스타일시트연결 -->
     <link rel="stylesheet" href="css/style.css">
     <!-- 제이쿼리 외부스크립트연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/javascript.js"></script>
 </head>
 <body>
@@ -40,16 +41,26 @@
             </nav>
         </div>
 
-        <div class="hero_img">
+        <div class="hero_img on">
             <img src="img/main1.png" alt="" class="i1">
             <img src="img/main2.png" alt="" class="i2">
             <img src="img/main3.png" alt="" class="i3">
+        </div>
+
+        <div class="help">
+            <div class="hp1">
+                <p>?</p>
+                <div class="hp2">
+                    <p>자주 하는 질문</p>
+                </div>
+            </div>
+
         </div>
     </header>
     
 <div id="wrap">
     <section>
-        <article>
+        <article id="about">
             <h2>About</h2>
             <div class="about">
                 
@@ -84,7 +95,8 @@
                     </div>
                 </div>
                 <div class="aBox2">
-                    <img src="img/A_chex.png" alt="">
+                    <img src="img/A_chex.png" alt="" class="abox2_1">
+                    <img src="img/A_lll.png" alt="" class="abox2_2">
                 </div>
                 <div class="aBox3">
                         <img src="img/A_5.png" alt="">
@@ -111,7 +123,7 @@
             <div class="chex">
                 <ul>
                     <li>
-                        <img src="img/B_1.png" alt="" cl><span></span>
+                        <a href="" class="cA"><img src="img/B_1.png" alt=""></a><span></span>
                         <div>
                             <p><em><a href="#">▶ 영상 보러가기</a></em>
                             <b>오곡으로 만든 첵스초코</b><br>
@@ -119,7 +131,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/B_2.png" alt=""><span></span>
+                        <a href="" class="cA"><img src="img/B_2.png" alt=""></a><span></span>
                         <div>
                             <p><em><a href="#">▶ 영상 보러가기</a></em>
                             <b>첵스초코 문앤스타</b><br>
@@ -127,7 +139,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/B_3.png" alt=""><span></span>
+                        <a href="" class="cA"><img src="img/B_3.png" alt=""></a><span></span>
                         <div>
                             <p><em><a href="#">▶ 영상 보러가기</a></em>
                             <b>첵스초코 스노우 초코볼</b><br>
@@ -135,7 +147,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/B_4.png" alt=""><span></span>
+                        <a href="" class="cA"><img src="img/B_4.png" alt=""></a><span></span>
                         <div>
                             <p><em><a href="#">▶ 영상 보러가기</a></em>
                             <b>첵스초코 마시멜로</b><br>
@@ -324,18 +336,24 @@
             123-456-7890<br>
             <em>월 ~ 금 09:00~17:00 (점심시간 12:30~13:30) (토/일/공휴일 휴무)</em>
         </p>
+        <div></div>
     </div>
     <div class="f3">
         <p>안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지)<br>
         서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)</p>
     </div>
     <div class="f4">
-        <p>Copyright ⓒ Songdaeun kellogg_chex</p>
         <ul>
             <li><a href="https://www.youtube.com/@kelloggkorea4273/featured"><img src="img/sns_1.png" alt=""></a></li>
             <li><a href="https://www.instagram.com/kelloggs_korea/"><img src="img/sns_2.png" alt=""></a></li>
             <li><a href="https://blog.naver.com/kelloggs_kr"><img src="img/sns_3.png" alt=""></a></li>
         </ul>
+        <div class="copyright">
+            <p>Copyright &copy; Songdaeun kellogg_chex</p>
+        </div>
+    </div>
+    <div class="fbImg">
+        <img src="img/footer_Blogo.png" alt="">
     </div>
 </footer>
 
