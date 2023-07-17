@@ -15,49 +15,7 @@
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-  var slideshow = document.getElementById("slideshow");
-  var images = slideshow.getElementsByTagName("img");
-  var previousButton = slideshow.querySelector(".previous");
-  var nextButton = slideshow.querySelector(".next");
-  var currentImage = 0;
 
-  function showImage(index) {
-    for (var i = 0; i < images.length; i++) {
-      images[i].classList.remove("active");
-    }
-
-    images[index].classList.add("active");
-  }
-
-  previousButton.addEventListener("click", function() {
-    currentImage = (currentImage - 1 + images.length) % images.length;
-    showImage(currentImage);
-  });
-
-  nextButton.addEventListener("click", function() {
-    currentImage = (currentImage + 1) % images.length;
-    showImage(currentImage);
-  });
-
-});
-
-function count(type)  {
-  // 결과를 표시할 element
-  const resultElement = document.getElementById('result');
-  // 현재 화면에 표시된 값
-  let number = resultElement.innerText;
-  
-  // 더하기/빼기
-  if(type === 'plus') {
-    number = parseInt(number) + 1;
-  }else if(type === 'minus')  {
-    number = parseInt(number) - 1;
-  }
-  
-  // 결과 출력
-  resultElement.innerText = number;
-}
     </script>
 </head>
 
@@ -65,7 +23,7 @@ function count(type)  {
     <img src="../img/hero_1deth.png" alt="" class="hd_img">
     <h1><img src="../img/logo.png" alt=""></h1>
 <header>
-<div class="hero">    
+<div class="hero2">    
         <div class="inner">
             <!-- sns -->
                         <ul class="snsSet">
@@ -111,14 +69,14 @@ function count(type)  {
         </div>
         <div class="sp2">
             <div class="sp2_1">
-                <p class="sp2_txt">첵스초코 문앤스타<em>(420g)</em></p>
+                <p class="sp2_txt">오곡으로 만든 첵스초코<em>(570g)</em></p>
                 <ul class="sp2_1icon">
                     <li><img src="../img/pngwing 12.png" alt=""></li>
                     <li><img src="../img/pngwing 13.png" alt=""></li>
                 </ul>
                 <div class="sp2_1img1"><img src="../img/Line 2.png" alt=""></div>
                 <p class="sp2_txt2">진한 첵스초코와 두가지 맛의 초코별&초코<br>달의 환상적인 만남!</p>
-                <div class="sp2_1img2"><img src="../img/star.png" alt=""></div>
+                <div class="sp2_1img2"><a href="#ItemComment"><img src="../img/star.png" alt=""></a></div>
             </div>
             <div class="sp2_2">
                 <div>
@@ -127,7 +85,7 @@ function count(type)  {
                 </div>
                 <div>
                     <p>판매가</p>
-                    <p>9,900원</p>
+                    <p>8,000원</p>
                 </div>
                 <div>
                     <p>배송비</p>
@@ -136,7 +94,7 @@ function count(type)  {
             </div>
             <div class="sp2_3">
                 <div class="sp2_3box">
-                    <p><em>첵스초코 문앤스타(420g)</em><br>9,900원</p>
+                    <p><em>오곡으로 만든 첵스초코(570g)</em><br>8,000원</p>
                     <input type='button'
                     onclick='count("plus")'
                     value='+'/>
@@ -149,7 +107,7 @@ function count(type)  {
             <div class="sp2_4">
                 <div>
                     <p>총 상품금액</p>
-                    <p>9,900원</p>
+                    <p>8,000원</p>
                 </div>
                 <ul>
                     <li>
@@ -168,8 +126,10 @@ function count(type)  {
 
 <div id="product">
 
-    <div><p>함께하면 좋은 상품들</p>
-    <img src="../img/Vector 5 (Stroke).png" alt=""></div>
+    <div>
+        <p>함께하면 좋은 상품들</p>
+        <img src="../img/Vector 5 (Stroke).png" alt="">
+    </div>
     <ul class="pd1">
         <li>
             <img src="../img/B_2.png" alt="">
@@ -188,17 +148,125 @@ function count(type)  {
         </li>
     </ul>
     <ul class="pd2">
-        <li>켈로그 홈페이지</li>
-        <li>농심 켈로그 다른 제품</li>
+        <li><a href="">켈로그 홈페이지</a></li>
+        <li><a href="">농심 켈로그 다른 제품</a></li>
+        <li><a href=""><img src="../img/footer_logo.png" alt=""></a></li>
     </ul>
-    <p><img src="../img/footer_logo.png" alt=""></p>
 </div>
 
+<ul class="menu">
+	<li class="on"><a href="#detail">상품상세정보</a></li>
+	<li><a href="#detail2">구매정보</a></li>
+	<li><a href="#ItemComment">상품후기</a></li>
+	<li><a href="#ItemQna">상품Q&A</a></li>
+</ul>
+
 <div id="content">
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <div class="confixed">
+        <p class="con_txt">오곡으로 만든 첵스초코<em>(570g)</em></p>
+        <div class="con_1img1"><img src="../img/Line 2.png" alt=""></div>
+        <p class="con_txt2">진한 첵스초코와 두가지 맛의 초코별&초코<br>달의 환상적인 만남!</p>
+        <div class="con_1img2"><a href="#ItemComment"><img src="../img/star.png" alt=""></a></div>
+        <ul class="con_txt3">
+            <li>
+                <p>판매가</p>
+                <p>8,000원</p>
+            </li>
+            <li>
+                <p>배송비</p>
+                <p>3,000원 (30,000원 이상 구매시 무료)</p>
+            </li>
+        </ul>
+        <div class="con_box">
+            <p><em>오곡으로 만든 첵스초코(570g)</em><br>8,000원</p>
+            <input type='button'
+            onclick='count("plus")'
+            value='+'/>
+            <div id='result'>0</div>
+            <input type='button'
+            onclick='count("minus")'
+            value='-'/>
+        </div>
+        <div class="con_txt4">
+            <p>총 상품금액</p>
+            <p>8,000원</p>
+        </div>
+        <ul class="con_box2">
+            <li><a href="#"><img src="../img/box.png" alt=""> 선물하기</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">바로구매</a></li>
+        </ul>
+
+    </div>
+    <section id="detail">
+        <p><img src="../img/chax1.jpg" alt=""></p>
+    </section>
+    <section id="detail2">
+        <ul>
+            <li>
+                <p>품명 및 모델명</p>
+                <p>[켈로그] 오곡으로 만든 첵스 초코 570g</p>
+            </li>
+            <li>
+                <p>식품의 유형</p>
+                <p>시리얼류</p>
+            </li>
+            <li>
+                <p>생산자 및 소재지</p>
+                <p>농심켈로그 주식회사 경기도 안성시 공단2로 29(신소현동)</p>
+            </li>
+            <li>
+                <p>수입자</p>
+                <p>해당사항 없음</p>
+            </li>
+            <li>
+                <p>제조연월일/유통기한,소비기한 또는 품질유지기한</p>
+                <p>점포 배송 상품으로 각 점포별 제조일과 입고일이 상이하여, 소비기한이 다릅니다. 이마트 점포상품과 동일한 품질을 유지한 상품이 배송됩니다. ※ 해당 정보에 대한 문의는 고객센터(1577-3419)로 문의해주세요/소비기한-점포 배송 상품으로 각 점포별 제조일과 입고일이 상이하여, 소비기한이 다릅니다. 이마트 점포상품과 동일한 품질을 유지한 상품이 배송됩니다. ※ 해당 정보에 대한 문의는 고객센터(1577-3419)로 문의해주세요</p>
+            </li>
+            <li>
+                <p>포장 단위별 내용물의 용량 (중량), 수량, 크기</p>
+                <p>570g</p>
+            </li>
+            <li>
+                <p>주원료/함량(원료 원산지)</p>
+                <p>[상세설명참조]</p>
+            </li>
+            <li>
+                <p>영양성분</p>
+                <p>[상세설명참조]</p>
+            </li>
+            <li>
+                <p>유전자 변형식품 여부</p>
+                <p>해당사항 없음</p>
+            </li>
+            <li>
+                <p>소비자 안전을 위한 주의 사항</p>
+                <p>부정, 불량식품 신고는 국번없이 1399 부정, 불량식품 신고는 국번없이 1399</p>
+            </li>
+            <li>
+                <p>수입식품안전관리특별법에 따른 수입신고 필함 여부</p>
+                <p>해당사항 없음</p>
+            </li>
+        </ul>
+    </section>
+    <section id="ItemComment">
+        <ul>
+            <li>상품후기</li>
+            <li>아직 등록된 후기가 없습니다.</li>
+        </ul>
+    </section>
+    <section id="ItemQna">
+        <ul>
+            <li class="I1">상품Q&A</li>
+            <li class="I2">
+                <p>전체 (0)</p>
+                <p>답변완료 (0)</p>
+                <p>답변대기 (0)</p>
+            </li>
+            <li class="I3">등록된 상품문의가 없습니다.</li>
+        </ul>
+
+    </section>
 </div>
 
 
@@ -215,7 +283,7 @@ function count(type)  {
             <li>|</li>
             <li><a href="#">고객만족센터</a></li>
         </ul>
-        <img src="../img/footer_logo.png" alt="">
+        <a href="../index.html"><img src="../img/footer_logo.png" alt=""></a>
     </div>
     <div class="f2">
         <p>
