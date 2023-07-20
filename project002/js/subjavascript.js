@@ -3,6 +3,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         let sb = $(this).scrollTop();
+        let sb2 = $(this).scrollTop();
         let ctt = $("#content").offset().top;
         console.log(ctt)
 
@@ -15,6 +16,17 @@ $(document).ready(function(){
         else{
           $('.submenu').removeClass('subfixed')
         }
+
+        if(sb2>=ctt){
+          
+          $('.confixed').addClass('cfix')
+  
+  
+        }
+        else{
+          $('.confixed').removeClass('cfix')
+        }
+
       })
 
     

@@ -153,6 +153,8 @@ header .hero {display: flex;
     cursor: pointer;}
         header nav li:hover {color: #FFC700;}
     
+    nav>li.on {color: #FFC700;}
+
     /* 메인 아래 물음표 설정 */
     .help {position: fixed;
     right: 50px;
@@ -1416,6 +1418,9 @@ margin-right: 3px;}
 
 .con_box2 li>a:hover {background-color: #F3FFA9;}
 .con_box2 li:nth-child(3) a:hover {background-color: #fff;}
+
+.confixed.cfix {position: fixed;
+top: 130px;}
 
 
 /* 1 */
