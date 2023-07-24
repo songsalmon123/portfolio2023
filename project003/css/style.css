@@ -412,8 +412,7 @@ height: 30px;}
     font-family: 'Noto Sans', sans-serif;
     color: #fff;}
 .Song .Sm {position: fixed;
-bottom: 35%;
-left: 15%;}
+bottom: 35%;}
 
 /* S1 위에 노래 설정 */
 .S1 {}
@@ -421,7 +420,8 @@ left: 15%;}
 .S1 ul li {position: fixed;
 display: flex;
 bottom: 44%;
-left: 19%;}
+width: 800px;
+margin-left: -355px;}
 .S1 ul li img {}
 .S1 ul li p {margin-left: 10%;
     font-size: 17px;
