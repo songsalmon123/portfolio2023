@@ -17,8 +17,8 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;}
 
-body.Photo2 {height: 5050px;
-}
+body.Photo2 {height: 5050px;}
+
 body.Youtube_body {height: 3170px;}
 
 
@@ -34,9 +34,8 @@ z-index: 999;
 border: 1px solid #000;
 filter: drop-shadow(3px 4px 3px rgba(0,0,0,0.2));}
 
-.popUp p {
-    text-align: center;
-}
+.popUp p {text-align: center;}
+
 .popUp p img {width: 520px;}
 .popUp span {font-family: 'Noto Sans', sans-serif;
 position: absolute;
@@ -49,8 +48,7 @@ right: -42px;
 justify-content: center;
 align-items: center;
 cursor: pointer;
-border: 1px solid #000;
-}
+border: 1px solid #000;}
 
 
 
@@ -73,8 +71,7 @@ h1 {width: 120px;
 
     0% {transform: scale(1);
     opacity: 0.8;}
-    100% {transform: scale(1.05);}
-}
+    100% {transform: scale(1.05);}}
 
 
 h1 img {width: 120px;
@@ -96,8 +93,7 @@ nav {width: 120px;
 z-index: 5;}
 nav ul {width: 100%;
     margin-top: 22%;}
-nav ul li {
-    opacity: 0;
+nav ul li {opacity: 0;
     font-family: 'Jacques Francois', serif;}
 nav ul li a {transition: all 0.2s;
     cursor: pointer;}
