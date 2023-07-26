@@ -414,19 +414,22 @@ bottom: 35%;}
 .S1 {}
 .S1 ul {}
 .S1 ul li {position: fixed;
-display: flex;
 bottom: 44%;
 width: 800px;
-margin-left: -355px;}
+margin-left: -355px;
+display: none;
+}
 .S1 ul li img {}
-.S1 ul li p {margin-left: 10%;
+.S1 ul li p {position: fixed;
+    margin-left: 16%;
     font-size: 17px;
     font-weight: 300;
 display: block;
 width: 500px;
-margin-top: 8%;
-line-height: 30px;}
-.S1 ul li p>em {font-style: normal;
+margin-top: -160px;
+line-height: 40px;}
+.S1 ul li p>em {
+    font-style: normal;
 font-size: 14px;}
 .S1 ul li p>b {font-size: 22px;}
 
@@ -457,6 +460,22 @@ opacity: 0.3;}
 .S3 img {position: fixed;
 bottom: 3%;
 left: 15.5%;}
+
+
+/* 가사보기 설정 */
+.click {}
+
+.click p {position: fixed;
+    width: 10px;
+    height: 50px;
+border-radius: 10px;
+background-color: aquamarine;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;}
+
+
 
 /* ///////////////////////////////////////////////////////////////// */
 /* 유튜브설정 */
@@ -578,7 +597,6 @@ z-index: 4;}
     padding: 10px;
     box-sizing: border-box;
 }
-
     .Pt1_11 {opacity: 0.4;
     transition: all 0.4s;}    
 .Pt1_1 ul li img {width: 115px;
@@ -598,7 +616,9 @@ margin-left: 500px;
 margin-bottom: 50px;}
 .Pt1_2 ul {}
 .Pt1_2 ul li {position: fixed;
+    display: none;
 }
+.Pt1_2 ul li.on {display: block;}
 .Pt1_2 ul li>img {}
 
 /* /////////////////////////////////////////////////////////////////////////////// */
@@ -621,30 +641,30 @@ left: 0;
 top: 0;}
 .P2_star {}
 
-.P2_o {width: 570px;
-height: 570px;
-background-color: #49D3FF;
-border-radius: 10000px;
-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));
-position: fixed;}
+.P2_o {width: 100%;
+height: 600px;
+filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
+position: fixed;
+margin-bottom: 100px;}
+.P2_o img {width: 100%;}
+
+.P2_o2 {position: fixed;
+right: 0px;
+bottom: 0px;}
 
 
 /* 넘어가는 사진 */
 .Pt2 {
-width: 100%;
-height: 100%;
-
+    margin-top: 20px;
 }
-.Pt2 ul {display: flex;
-    width: 5000px;
-    height: 650px;
-    position: absolute;
-left: 50%;
-margin-left: -240px;
-transition: all 0.7s;
-top: 20%;
-}
-.Pt2 ul li {margin-right: 100px;}
+.Pt2 ul { width:480px; height:600px; 
+    position:relative;  margin:0 auto;
+    list-style:none;
 
+    overflow: hidden; 
+}
+.Pt2 ul li { width:480px; 
+    height:600px; position:absolute; top:0; left: 100%;}
+.Pt2 ul li:nth-child(1) {left: 0;}
 .Pt2 ul li>img{width: 480px;}
 

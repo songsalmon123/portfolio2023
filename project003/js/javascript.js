@@ -7,21 +7,20 @@ $(document).ready(function(){
     })
   
 // ///////////////////////////////////////////////////////////////////////
+  
+var ii = 0;
+setInterval(function(){
+
+ii++;
+if(ii==8)ii=0
+
+  //왼쪽으로 이동해라.
+  $('.Pt2 li').eq(ii-1).css('left','0').stop().animate({'left':'-100%'},800);
+  $('.Pt2 li').eq(ii).css('left','100%').stop().animate({'left':"0"},800)
+  
+  },2000);
 
 
-
- $(window).scroll(function(){
-
-    let sc = $(this).scrollTop();
-
-    console.log(sc)
-
-    $('.Pt2 ul').css({'margin-left': (-240-sc)+'px'});
-
-    let ys = $(this).scrollTop();
-
-    $('.vid ul').css({'margin-left': (-700-ys)+'px'})
- })
 
  var Pt1_11 = document.getElementsByClassName("Pt1_11");
 
@@ -49,5 +48,26 @@ function init() {
 
 init();
 
+
+$('.Pt1_1 li').click(function(){
+
+    let a =$(this).index()
+    console.log(a)
+
+$('.Pt1_2 li').hide()
+$('.Pt1_2 li').eq(a).show()
+
+});
+
+// song 클릭
+$('.S2 li').click(function(){
+
+    let ss =$(this).index()
+    console.log(ss)
+
+$('.S1 li').hide()
+$('.S1 li').eq(ss).show()
+
+});
 
 })
