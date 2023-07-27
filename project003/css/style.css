@@ -462,19 +462,6 @@ bottom: 3%;
 left: 15.5%;}
 
 
-/* 가사보기 설정 */
-.click {}
-
-.click p {position: fixed;
-    width: 10px;
-    height: 50px;
-border-radius: 10px;
-background-color: aquamarine;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;}
-
 
 
 /* ///////////////////////////////////////////////////////////////// */

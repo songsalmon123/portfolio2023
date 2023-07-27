@@ -534,7 +534,7 @@ section article:nth-child(5) .txt {margin-top: 100px;}
     margin-top: 100px;
 display: flex;
 position: relative;
-background-image: url(../img/c_img.png);
+background-image: url(../img/C_bimg.png);
 background-repeat: no-repeat;
 background-position: top;
 background-size: 100%;
@@ -921,6 +921,7 @@ margin-left: 60px;
 .e2>li>.etxt1>li:nth-child(1) {margin-top: 60px;}
 .e2>li>.etxt3>li:nth-child(1) {margin-top: 120px;}
 
+.etxt2 {margin-top: 15px;}
 
 /* //////////////////////////////////////// */
 /* 푸터 설정 */
