@@ -2,7 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* 전체설정 */
 * {margin: 0;
@@ -66,5 +72,161 @@ color: #FCC304;
 font-size: 80px;
 position: fixed;
 left: 37%;
-margin-top: 30px;
+margin-top: 30px;}
+
+/* PTdog */
+.PTdog {position: fixed;
+right: 20%;
+bottom: 8%;}
+.PTdog>img {width: 350px;}
+
+
+/* PTnav */
+.PTnav {position: fixed;
+right: 20%;
+top: 30%;}
+.PTnav ul {font-family: 'Tilt Warp', cursive;
+width: 500px;
+height: 350px;
+text-align: right;}
+.PTnav ul li {font-size: 70px;
+height: 120px;}
+.PTnav ul li>a {transition: all 0.4s;
+padding-bottom: 10px;
 }
+.PTnav ul li>a>img {}
+.PTnav ul li>a:hover {background-color: #ffffff;}
+
+
+
+
+/* //////////////////////////////////////////////////////// */
+/* 프로필 구간 */
+
+/* 서브페이지 네비 */
+.subnav {position: fixed;
+top: 12px;
+width: 60%;
+left: 20%;}
+.subnav ul {display: flex;
+align-items: center;
+justify-content: space-between;}
+.subnav li:nth-child(2) {margin-left: 70px;}
+.subnav a {}
+.subnav img {height: 40px;}
+
+
+/* 프로필 섹션 */
+section {width: 80%;
+height: 90%;
+left: 10%;
+background-color: #bbbbbb;
+position: relative;
+font-family: 'Cafe24SsurroundAir';}
+
+/* 학업 */
+.P1 {width: 35%;
+height: 200px;
+background-color: aqua;
+position: absolute;
+text-align: center;}
+.P1>div>img {width: 100%;}
+
+
+.P1>ul {display: flex;
+font-size: 15px;
+color: #3563A1;}
+
+/* 위에 날짜 */
+.P1_1 {display: flex;
+justify-content: space-between;
+width: 80%;
+margin-left: 10%;
+margin-bottom: 20px;}
+.P1_1>li:nth-child(1) {margin-left: -20px;}
+.P1_1>li:nth-child(2) {margin-right: 14%;}
+
+.P1_2 {display: flex;
+    justify-content: space-between;
+margin-top: 20px;}
+
+.P1_2 li:nth-child(3) {margin-right: -20px;}
+
+/* //// */
+/* aducation */
+.P2 {position: absolute;
+width: 30%;
+background-color: #afa890;
+right: 35%;
+top: 0;
+height: 40%;}
+.P2>p {}
+.P2>p>img {width: 950px;
+margin-left: -530px;
+margin-top: 20px;}
+
+/* //// */
+/* about me */
+.P3 {width: 35%;
+height: 30%;
+background-color: beige;
+position: absolute;
+top: 0;
+right: 0;}
+.P3 ul {}
+.P3 li {background-color: #FCC304;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+color: #3563A1;
+position: absolute;}
+.P3 li:nth-child(1) {font-size: 35px;
+width: 230px;
+height: 60px;
+top: 30px;
+left: -75px;}
+.P3 li:nth-child(2) {font-size: 17px;
+width: 130px;
+height: 40px;
+left: 36%;}
+.P3 li:nth-child(3) {font-size: 23px;
+width: 160px;
+height: 40px;
+right: 30px;
+top: 25px;}
+.P3 li:nth-child(4) {font-size: 27px;
+width: 200px;
+height: 50px;
+top: 30%;
+left: 32%;}
+.P3 li:nth-child(5) {font-size: 14px;
+width: 120px;
+height: 30px;
+right: 0;
+top: 33%;}
+.P3 li:nth-child(6) {font-size: 25px;
+width: 220px;
+height: 50px;
+bottom: 25%;}
+.P3 li:nth-child(7) {font-size: 22px;
+width: 140px;
+height: 40px;
+bottom: 19%;
+left: 45%;}
+.P3 li:nth-child(8) {font-size: 20px;
+width: 120px;
+height: 37px;
+right: 10px;
+bottom: 29%;}
+
+/* //// */
+/* DESIGN APTITUDE */
+.P4 {position: absolute;
+width: 350px;
+height: 400px;
+bottom: 180px;
+left: 10%;
+text-align: center;}
+.P4 span {}
+.P4 span>img {width: 300px;}
