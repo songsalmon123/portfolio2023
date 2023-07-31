@@ -25,6 +25,43 @@
     background-position: center center;}
 
 
+/* 움직이는 뒷배경 원설정 */
+.one {}
+.one>img {
+width: 330px;
+top: 50%;
+margin-top: -165px;
+position: fixed;}
+
+
+.o1 {position: absolute;
+    right:0;
+    animation: ani1 7s linear infinite;}
+.o2 {position: absolute;
+    right: 25%;
+    animation: ani2 80s linear infinite;}
+    .o3 {position: absolute;
+        right: 50%;
+        animation: ani3 80s linear infinite;}
+    .o4 {position: absolute;
+        right: 75%;
+        animation: ani4 80s linear infinite;}
+        .o5 {position: absolute;
+            right: 100%;
+            animation: ani5 80s linear infinite;}
+    
+    @keyframes ani1 {
+        0% {left: -330px;}
+        100% {left: 100%;}
+    }
+    
+    @keyframes ani {
+        0% {left: 0;}
+        50% {left: 1950px;}
+        50.001% {left: -1840px;}
+        100% {left: 0;}
+    }
+
 /* PTmain */
 .PT {width: 100%;
 height: 100px;
@@ -230,3 +267,52 @@ left: 10%;
 text-align: center;}
 .P4 span {}
 .P4 span>img {width: 300px;}
+
+/* //// */
+/* hobby */
+.P5 {position: absolute;
+    width: 500px;
+height: 310px;
+background-color: #FCC304;
+bottom: 0;
+left: 50%;
+margin-left: -250px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+text-align: center;
+}
+.P5>h3 {margin-top: -100px;
+}
+
+.P5>h2 {width: 100%;
+    margin-top: 5px;
+border-bottom: #3563A1 solid 2px;}
+.P5>h2>p {background-color: #FCC304;
+    position: fixed;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    font-size: 16px;
+    margin-top: -5px;
+    color: #3563A1;
+}
+
+
+/* P5_1/이미지 */
+.P5_1 {display: flex;
+justify-content: space-between;
+width: 84%;
+margin-left: 8%;
+margin-top: 30px;}
+.P5_1 li {}
+.P5_1 img {width: 105px;}
+.P5_1 p {width: 115px;
+    height: 25px;
+align-items: center;
+justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 500px;
+font-size: 13px;
+background-color: #FCDD86;
+color: #3563A1;}
