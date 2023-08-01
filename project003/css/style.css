@@ -414,12 +414,23 @@ bottom: 35%;}
 .S1 {}
 .S1 ul {}
 .S1 ul li {position: fixed;
-bottom: 44%;
+bottom: 428px;
 width: 800px;
-margin-left: -355px;
+margin-left: -353px;
 display: none;
 }
-.S1 ul li img {}
+.S1 ul li img {
+    width: 217px;
+height: 217px;
+animation: rotate_image 6s linear infinite;transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .S1 ul li p {position: fixed;
     margin-left: 16%;
     font-size: 17px;
@@ -433,6 +444,15 @@ line-height: 40px;}
 font-size: 14px;}
 .S1 ul li p>b {font-size: 22px;}
 
+/* 가사보기 */
+.ss1 {position: fixed;}
+.ss1>p {font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    width: 100px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);}
+    .pop1 {}
 
 /* S2 아래 앨범 설정 */
 .S2 {position: fixed;
