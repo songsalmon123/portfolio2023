@@ -28,46 +28,40 @@
 /* 움직이는 뒷배경 원설정 */
 .one {}
 .one>img {
-width: 330px;
+width: 100%;
 top: 50%;
 margin-top: -165px;
 position: fixed;}
 
 
 .o1 {position: absolute;
-    right:0;
-    animation: ani1 20s linear infinite;}
+    left:-100%;
+    animation: ani1 25s linear infinite;}
 .o2 {position: absolute;
-    right: 25%;
-    animation: ani2 20s linear infinite;}
-    .o3 {position: absolute;
-        right: 50%;
-        animation: ani3 80s linear infinite;}
-    .o4 {position: absolute;
-        right: 75%;
-        animation: ani4 80s linear infinite;}
-        .o5 {position: absolute;
-            right: 100%;
-            animation: ani5 80s linear infinite;}
-    
+    left: -200%;
+    animation: ani2 25s linear infinite;}
+
+
     @keyframes ani1 {
-        0% {right: 0px;}
-        50% {right: -100%;}
-        50.001% {right: 100%;}
-        100% {right: 0;}
+        0% {left:0;}
+        50% {left: -100%;}
+        50.0001% {left: 100%;}
+        100% {left: 0;}
     }
     @keyframes ani2 {
-        0% {right: 25%;}
-        50% {right: -85%;}
-        50.001% {right: 85%;}
-        100% {right: 0;}
+        0% {left:100%;}
+        50% {left: 0;}
+        100% {left: -100%;}
     }
+
+
     
 /* PTmain */
 .PT {width: 100%;
 height: 100px;
 position: relative;
-font-family: 'Comfortaa', cursive;}
+font-family: 'Comfortaa', cursive;
+}
 .PT ul {width: 90%;
     margin-left: 5%;
     display: flex;
@@ -95,7 +89,8 @@ left: 10%;
 top: 180px;}
 .PTimg>ul>li:nth-child(1) {z-index: 9;}
 .PTimg>ul>li:nth-child(2) {top: 325px;
-left: 580px;}
+left: 580px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+z-index: 8;}
 .PTimg>ul>li:nth-child(2)>img {width: 460px;}
 .PTimg>ul>li>img {width: 600px;}
 
@@ -122,7 +117,8 @@ bottom: 8%;}
 /* PTnav */
 .PTnav {position: fixed;
 right: 20%;
-top: 30%;}
+top: 30%;
+z-index: 999;}
 .PTnav ul {font-family: 'Tilt Warp', cursive;
 width: 500px;
 height: 350px;
